@@ -1,0 +1,68 @@
+// variables
+$bg-color: #333;
+$font-color: #fff;
+$primary-color: #3498db;
+$dark-overlay: rgba(0, 0, 0, .7);
+
+$landing-icon-size: 30px;
+
+// GENERAL STYLES
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.navbar {
+  border-bottom: $primary-color 3px solid;
+  opacity: .8;
+}
+
+// HOME
+#home-section {
+  background: url('../img/city.jpeg') no-repeat center top fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .dark-overlay {
+    background-color: $dark-overlay;
+    min-height: 700px;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .home-inner {
+    padding-top: 150px;
+  }
+
+  .fa {
+    color: $primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $landing-icon-size;
+  }
+}
+
+// EXPLORE
+#explore-section, #share-section {
+  .fa {
+    color: #fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size:$landing-icon-size;
+  }
+}
+
+// CREATE
+#create-section {
+  .fa {
+    color: $primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size:$landing-icon-size;
+  }
+}
